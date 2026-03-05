@@ -14,14 +14,9 @@ Contact : huber@lp2ib.in2p3.fr
 git clone https://github.com/ahuber33/ICS_Image_Analysis.git
 ```
 
-**GitLab:**
-```bash
-git clone https://gitlab.com/ahuber33/ICS_Image_Analysis.git
-```
-
 Then move into the project folder:
 ```bash
-cd ics-image-analysis
+cd ICS_Image_Analysis
 ```
 
 
