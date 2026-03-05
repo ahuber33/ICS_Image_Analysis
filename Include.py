@@ -578,7 +578,7 @@ def Creation_CSV(results: list, output_folder: Path):
     df_w1 = df[df["canal"] == "w1TRITC"].reset_index(drop=True)
     df_w2 = df[df["canal"] == "w2GFP"].reset_index(drop=True)
     df_combined = pd.concat([df_w1, df_w2], axis=1, keys=["w1TRITC", "w2GFP"])
-    csv_path = output_folder / "Results_with_true.csv"
+    csv_path = output_folder / "Results.csv"
     df_combined.to_csv(csv_path, index=False, sep=";", decimal=",")
     print(f"Analyse terminée. Résultats sauvegardés dans : {csv_path}")
 
@@ -666,4 +666,5 @@ def Plot_final_patches(img: np.ndarray, filtered_rois: list, soma_patches: list,
     sm = cm.ScalarMappable(cmap=cmap_v, norm=norm_v)
     sm.set_array([])
     plt.colorbar(sm, ax=ax, fraction=0.046, pad=0.04).set_label("Probabilité moyenne CNN")
+
     ax.set_title(f"Patchs finaux : {len(filtered_rois)}"); ax.axis("off"); plt.show()
