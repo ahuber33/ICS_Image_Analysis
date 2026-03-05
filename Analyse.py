@@ -12,16 +12,8 @@ import logging
 
 import Include
 
-
-
 logging.getLogger("cellpose").setLevel(logging.ERROR)
 warnings.filterwarnings("ignore", message=".*no mask pixels found.*")
-
-
-
-
-
-
 
 # ═══════════════════════════════════════════════════════════════════════════
 # 1. DEVICE  (auto-détection GPU / CPU)
@@ -142,4 +134,5 @@ for fichier in tqdm(fichiers, desc="Traitement des fichiers", unit="fichier"):
 # ═══════════════════════════════════════════════════════════════════════════
 # 5. EXPORT CSV
 # ═══════════════════════════════════════════════════════════════════════════
+
 Include.Creation_CSV(results, output_folder)
