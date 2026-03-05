@@ -11,12 +11,12 @@ Contact : huber@lp2ib.in2p3.fr
 
 **GitHub:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/ics-image-analysis.git
+git clone https://github.com/ahuber33/ICS_Image_Analysis.git
 ```
 
 **GitLab:**
 ```bash
-git clone https://gitlab.com/YOUR_USERNAME/ics-image-analysis.git
+git clone https://gitlab.com/ahuber33/ICS_Image_Analysis.git
 ```
 
 Then move into the project folder:
@@ -24,7 +24,6 @@ Then move into the project folder:
 cd ics-image-analysis
 ```
 
-> Replace `YOUR_USERNAME` and `ics-image-analysis` with your actual username and repository name once created.
 
 Once cloned, open `Analyse.py`, set the path to your image folder, and follow the [Installation](#4-installation) section below.
 
